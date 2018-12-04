@@ -1,0 +1,15 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	tfg.local. root.tfg.local. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	dns.tfg.local.
+2.3.0	IN	PTR	dns.tfg.local.
+2.2.1	IN	PTR	lb1.tfg.local.
+;2.2.2	IN	PTR	lb2.tfg.local.
